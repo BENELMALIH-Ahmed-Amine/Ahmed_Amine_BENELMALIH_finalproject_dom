@@ -15,7 +15,7 @@ img {
 
 @font-face {
     font-family: amatic;
-    src: url(../fonts/AmaticSC-Regular.tt)
+    src: url(../fonts/AmaticSC-Regular.ttf)
 }
 
 @font-face {
@@ -23,23 +23,30 @@ img {
     src: url(../fonts/Roboto-VariableFont_wdth\,wght.ttf)
 }
 
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 ul {
     list-style: none;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 
 button {
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: rgb(206, 18, 18);
-    padding: 8px 30px;
+    padding: 12px 35px;
     font-size: 14;
     color: rgb(255, 255, 255);
-    font-weight: bold;
+    font-weight: 450;
 }
 
 /** End general */
@@ -47,25 +54,21 @@ button {
 /* header */
 /* first */
 .first {
+    background-color: #ffffff;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    padding: 25px 0;
     position: absolute;
     top: 0;
 }
 
-.nav_container {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav_container .icon {
+.icon {
+    font-family: roboto;
     font-size: 30px;
     color: rgb(0, 0, 0);
+    font-weight: bold;
 }
 
 .icon span {
@@ -74,34 +77,126 @@ button {
 
 /* links */
 nav .links {
-    background-color: #ffffff;
     font-size: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
 }
 
 .links a {
     color: rgb(0, 0, 0);
 }
 
-.links .dropdown {
-    font-size: 16px;
+/*^ modals */
+.dropdown {
     display: none;
-    width: 120px;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#drop1 {
+    position: absolute;
+    top: 55px;
+}
+
+#drop2 {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 45px;
+    right: 180px;
 }
 
 .dropdown li {
-    padding: 5px;
-}
-
-.dropdown .drop {
-    display: none;
+    font-size: 16px;
+    padding: 8px;
 }
 
 .log {
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 40px 75px;
+    border: dashed;
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    right: 160px;
+    top: 90px;
+}
+
+.log div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.log input {
+    padding: 8px 30px;
+    background-color: rgb(206, 18, 18);
 }
 
 /* welcome */
+.welcome {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    padding: 50px 0;
+    background-color: rgb(242, 242, 242);
+}
+
+/* left */
+.welcome .left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.left div {
+    width: 83%;
+}
+
+.left h1 {
+    font-family: amatic;
+    font-size: 64px;
+}
+
+.left p {
+    color: rgb(95, 98, 101);
+    font-size: 20px;
+}
+
+/* buttons */
+.left #book {
+    padding: 13px 35px;
+    font-size: 16px;
+}
+
+.left #video {
+    background-color: unset;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+/* right */
+.welcome .right {
+    width: 41%;
+}
+
+
+/* main */
+/* general */
+article {
+    background-color: #8d6d6d;
+    padding: 60px 0;
+}
+
+/** End general */
