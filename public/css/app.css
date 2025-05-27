@@ -1,12 +1,12 @@
 /* General */
-html {
+/*! html {
     font-size: 6.25%;
-}
+} */
 
 * {
-        margin: 0%;
-        padding: 0%;
-        box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
 
 img {
@@ -14,11 +14,94 @@ img {
 }
 
 @font-face {
-  font-family: amatic;
-  src: url(../fonts/AmaticSC-Regular.tt)
+    font-family: amatic;
+    src: url(../fonts/AmaticSC-Regular.tt)
 }
 
 @font-face {
-  font-family: roboto;
-  src: url(../fonts/Roboto-VariableFont_wdth\,wght.ttf)
+    font-family: roboto;
+    src: url(../fonts/Roboto-VariableFont_wdth\,wght.ttf)
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+button {
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(206, 18, 18);
+    padding: 8px 30px;
+    font-size: 14;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+/** End general */
+
+/* header */
+/* first */
+.first {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+}
+
+.nav_container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_container .icon {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.icon span {
+    color: rgb(206, 18, 18);
+}
+
+/* links */
+nav .links {
+    background-color: #ffffff;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.links a {
+    color: rgb(0, 0, 0);
+}
+
+.links .dropdown {
+    font-size: 16px;
+    display: none;
+    width: 120px;
+}
+
+.dropdown li {
+    padding: 5px;
+}
+
+.dropdown .drop {
+    display: none;
+}
+
+.log {
+    display: none;
+}
+
+/* welcome */
