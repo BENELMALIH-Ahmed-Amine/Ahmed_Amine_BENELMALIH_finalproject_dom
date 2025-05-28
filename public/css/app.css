@@ -1,7 +1,8 @@
 /* General */
-/*! html {
-    font-size: 6.25%;
-} */
+html {
+    /* font-size: 6.25%; */
+    font-family: roboto;
+}
 
 * {
     margin: 0%;
@@ -11,6 +12,7 @@
 
 img {
     width: 100%;
+    height: 100%;
 }
 
 @font-face {
@@ -24,9 +26,18 @@ img {
 }
 
 .container {
-    width: 80%;
+    background-color: rgb(128, 91, 31);
+    width: 75%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.flex {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -38,20 +49,22 @@ a {
     text-decoration: none !important;
 }
 
+.orange {
+    color: rgb(206, 18, 18)
+}
 
 button {
     border: none;
-    border-radius: 25px;
+    border-radius: 25px !important;
     background-color: rgb(206, 18, 18);
     padding: 12px 35px;
     font-size: 14;
     color: rgb(255, 255, 255);
     font-weight: 450;
 }
-
 /** End general */
 
-/* header */
+/*~ header */
 /* first */
 .first {
     background-color: #ffffff;
@@ -92,9 +105,19 @@ nav .links {
 .dropdown {
     display: none;
     background-color: rgb(255, 255, 255);
-    width: 200px;
+    width: 165px;
     font-size: 16px;
-    padding: 10px;
+    padding: 12px;
+}
+
+.dropdown ul {
+    padding: 0%;
+}
+
+.dropdown li {
+    font-size: 16px;
+    width: 165px;
+    padding: 8px 0;
 }
 
 #drop1 {
@@ -104,14 +127,10 @@ nav .links {
 
 #drop2 {
     background-color: rgb(255, 255, 255);
+    width: 170px;
     position: absolute;
-    top: 45px;
-    right: 180px;
-}
-
-.dropdown li {
-    font-size: 16px;
-    padding: 8px;
+    top: 50px;
+    right: 160px;
 }
 
 .log {
@@ -160,27 +179,27 @@ nav .links {
     gap: 30px;
 }
 
-.left div {
+.welcome .left div {
     width: 83%;
 }
 
-.left h1 {
+.welcome .left h1 {
     font-family: amatic;
     font-size: 64px;
 }
 
-.left p {
+.welcome .left p {
     color: rgb(95, 98, 101);
     font-size: 20px;
 }
 
 /* buttons */
-.left #book {
+.welcome .left #book {
     padding: 13px 35px;
     font-size: 16px;
 }
 
-.left #video {
+.welcome .left #video {
     background-color: unset;
     color: rgb(0, 0, 0);
     font-size: 16px;
@@ -188,15 +207,6 @@ nav .links {
 
 /* right */
 .welcome .right {
-    width: 41%;
+    width: 40%;
 }
-
-
-/* main */
-/* general */
-article {
-    background-color: #8d6d6d;
-    padding: 60px 0;
-}
-
-/** End general */
+/** End header */

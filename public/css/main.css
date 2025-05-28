@@ -1,0 +1,179 @@
+/*~ main */
+/* general */
+article {
+    padding: 70px 0;
+    margin-bottom: 10px;
+    /*! remove */
+}
+
+.head {
+    padding: 0 10px 40px 10px;
+    background: #e69898;
+    gap: 15px;
+}
+
+.head h2 {
+    text-transform: uppercase;
+    color: rgb(156, 158, 160);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.head p {
+    font-family: amatic;
+    font-size: 48px;
+}
+
+/** End general */
+
+/* about */
+.about .left {
+    width: 55%;
+    gap: 30px;
+}
+
+.about .left .left_dawon {
+    width: 100%;
+    border: 5px solid rgb(0, 0, 0);
+    padding: 20px;
+    font-weight: bold;
+}
+
+.left_dawon p {
+    margin-top: 10px;
+    font-size: 28px;
+}
+
+.about .right {
+    width: 42%;
+    font-size: 17px;
+}
+
+.about .right p:first-child {
+    color: #949698;
+    font-style: italic;
+}
+
+.about .right ul {
+    padding: 0px;
+}
+
+.about .right ul li {
+    padding: 8px;
+    font-weight: 500;
+}
+
+.bi-check-circle-fill {
+    margin-right: 8px;
+}
+
+.about .right .img {
+    background-color: #e69898;
+    width: 100%;
+    height: 350px;
+}
+
+/* about-2 */
+.a-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    background-color: rgb(242, 242, 242);
+    margin-top: 70px;
+    padding: 70px 0 70px 0;
+}
+
+.a_c {
+    gap: 25px;
+    letter-spacing: .01px;
+}
+
+.a-2_o {
+    background-color: rgb(206, 18, 18);
+    width: 33%;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    gap: 20px;
+}
+
+.a-2_o h3 {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+}
+
+.a-2_o p {
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 500;
+}
+
+#Learn {
+    background-color: rgba(255, 255, 255, 20%);
+    font-size: 17px;
+}
+
+#Learn:hover {
+    color: rgb(206, 18, 18);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.a-2_w {
+    background-color: #fff;
+    width: 20%;
+    padding: 40px 20px;
+    text-align: center;
+    gap: 25px;
+}
+
+.a-2_w div {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(253, 242, 242);
+    color: rgb(206, 18, 18);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.a-2_w:hover div {
+    background-color: rgb(206, 18, 18);
+    color: rgb(255, 255, 255);
+}
+
+.a-2_w h4 {
+    font-size: 20px;
+}
+
+/* about-3 */
+.a-3 {
+    background-image: url(../images/stats-bg.jpg);
+    width: 100vw;
+}
+
+.a-3 .opa {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    /*todo: position */
+}
+
+.nums {
+    background: unset;
+    flex-direction: row;
+    gap: 150px;
+    padding: 150px;
+}
+
+.num {
+    background: unset;
+    text-align: center;
+    color: rgba(198, 194, 193, 0.849);
+    font-weight: bold;
+}
+
+.num span {
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+}

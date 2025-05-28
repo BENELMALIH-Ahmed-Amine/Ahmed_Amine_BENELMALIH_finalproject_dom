@@ -29,7 +29,7 @@
 let dropdown1 = document.querySelector('.drop1')
 
 dropdown1.addEventListener('mouseover', () => {
-    dropdown1.firstElementChild.style.display = "block"
+    dropdown1.firstElementChild.style.display = "flex"
 })
 
 let list1 = document.getElementById('drop1')
@@ -43,7 +43,7 @@ list1.addEventListener('mouseleave', () => {
 let dropdown2 = document.querySelector('.drop2')
 
 dropdown2.addEventListener('mouseover', () => {
-    dropdown2.firstElementChild.style.display = "block"
+    dropdown2.firstElementChild.style.display = "flex"
 })
 
 dropdown2.addEventListener('mouseleave', () => {
