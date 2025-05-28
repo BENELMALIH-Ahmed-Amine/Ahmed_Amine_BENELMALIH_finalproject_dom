@@ -78,16 +78,14 @@ enter.addEventListener('click', () => {
 
 
 // menu check
-let  Starters = document.querySelector('.Starters_js').parentElement
-let  Breakfast = document.querySelector('.Breakfast_js').parentElement
-let  Lunche = document.querySelector('.Lunch_js').parentElement
-let  Dinner = document.querySelector('.Dinner_js').parentElement
+let Starters = document.querySelector('.Starters_js').parentElement
+let Breakfast = document.querySelector('.Breakfast_js').parentElement
+let Lunche = document.querySelector('.Lunch_js').parentElement
+let Dinner = document.querySelector('.Dinner_js').parentElement
 
 let times = [Starters, Breakfast, Lunche, Dinner]
 
 let meals = document.querySelectorAll('.times')
-console.log(meals);
-
 
 times.forEach(t => {
     meals.forEach(m => {
@@ -95,14 +93,38 @@ times.forEach(t => {
             t.addEventListener('click', () => {
                 meals.forEach(e => {
                     e.classList.add('click')
-                    m.classList.remove('click2')
                 })
                 m.classList.remove('click')
-                e.classList.add('click2')
             })
         }
         //todo else {
         //     alert("ERROR: Sorry, the Menu is beinng fixed.")
         // }
     })
-})  
+})
+
+
+
+// caroucel (testemonial)
+let T_Btn = Array.from(document.getElementById('nav_b').children)
+console.log(T_Btn);
+
+let T_Slides = Array.from(document.getElementById('view').children)
+console.log(T_Slides)
+
+let view = document.getElementById('t-caroucel')
+
+T_Btn.forEach(b => {
+    T_Slides.forEach(s => {
+        b.addEventListener('click', () => {
+            if (b.getAttribute('class') == s.id) {
+                T_Slides.forEach(e => {
+                    e.style.display="none"
+                })
+                
+                s.classList.add(s.id)
+                console.log(s);
+            }
+        })
+    })
+})

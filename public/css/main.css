@@ -195,18 +195,18 @@ article {
 
 .menu_nav li {
     padding: 5px;
-    /* border-bottom: 3px solid rgb(214, 215, 216); */
+    /* border-bottom: 2.5px solid rgb(214, 215, 216); */
 }
 
 /* .menu_nav li:hover, .menu_nav li:first-child {
-    /* border-bottom: 3px solid rgb(206, 18, 18);
+    /* border-bottom: 2.5px solid rgb(206, 18, 18);
 } */
 
 
 /* times */
 .click {
     display: none;
-    border-bottom: 3px solid rgb(214, 215, 216);
+    border-bottom: 2.5px solid rgb(214, 215, 216);
 }
 
 .times .head {
@@ -243,3 +243,99 @@ article {
     font-weight: bold;
 }
 
+/** testimonial */
+#t-caroucel {
+    background-color: rgb(242, 242, 242);
+    width: 100vw;
+    padding: 100px;
+    border:5px double #e69898;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#view {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.details {
+    flex-direction: row;
+    justify-content: center;
+    min-width: 100%;
+    height: 200px;
+    border-left: 3px solid rgb(206, 18, 18);
+    padding-left: 20px;
+    background: unset;
+    transform: translateX(1170px);
+}
+
+#view .client1 {
+    transform: translateX(1170px);
+    display: flex;
+}
+
+#view .client2 {
+    transform: translateX(395px);
+    display: flex;
+}
+
+#view .client3 {
+    transform: translateX(-380px);
+    display: flex;
+}
+
+#view .client4 {
+    transform: translateX(-1155px);
+    display: flex;
+}
+
+.details .info {
+    width: 75%;
+}
+
+.info p {
+    font-family: roboto;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: italic;
+    width: 90%;
+    margin: 0 0 16px 0;
+}
+
+.info h3 {
+    font-family: amatic;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.info h4 {
+    font-family: amatic;
+    font-size: 14px;
+}
+
+.info .bi-quote {
+    rotate: 90deg;
+    color: rgb(224, 130, 130);
+    font-size: 30px;
+}
+
+.info .stars i {
+    color: rgb(255, 193, 7);
+}
+
+.details .img {
+    width: 170px;
+    border-radius: 50%;
+}
+
+.details .img img {
+    border-radius: 50%;
+}
+
+.testimonial #nav_b button {
+    padding: 8px !important;
+    margin: 2px;
+}
