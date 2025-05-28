@@ -1,5 +1,5 @@
 /*~ main */
-/* general */
+/** general */
 article {
     padding: 70px 0;
     margin-bottom: 10px;
@@ -14,9 +14,9 @@ article {
 
 .head h2 {
     text-transform: uppercase;
-    color: rgb(156, 158, 160);
-    font-size: 13px;
-    font-weight: bold;
+    color: rgb(160, 156, 156);
+    font-size: 14px;
+    /* font-weight: bold; */
 }
 
 .head p {
@@ -24,15 +24,15 @@ article {
     font-size: 48px;
 }
 
-/** End general */
+/* End general */
 
-/* about */
-.about .left {
+/** about */
+#about .left {
     width: 55%;
     gap: 30px;
 }
 
-.about .left .left_dawon {
+#about .left .left_dawon {
     width: 100%;
     border: 5px solid rgb(0, 0, 0);
     padding: 20px;
@@ -44,21 +44,21 @@ article {
     font-size: 28px;
 }
 
-.about .right {
+#about .right {
     width: 42%;
     font-size: 17px;
 }
 
-.about .right p:first-child {
+#about .right p:first-child {
     color: #949698;
     font-style: italic;
 }
 
-.about .right ul {
+#about .right ul {
     padding: 0px;
 }
 
-.about .right ul li {
+#about .right ul li {
     padding: 8px;
     font-weight: 500;
 }
@@ -67,7 +67,7 @@ article {
     margin-right: 8px;
 }
 
-.about .right .img {
+#about .right .img {
     background-color: #e69898;
     width: 100%;
     height: 350px;
@@ -101,7 +101,6 @@ article {
     font-size: 34px;
     font-weight: bold;
     margin-bottom: 30px;
-
 }
 
 .a-2_o p {
@@ -177,3 +176,70 @@ article {
     font-size: 48px;
     color: rgb(255, 255, 255);
 }
+
+
+
+/** menu */
+.m-c {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu_nav {
+    flex-direction: row;
+    padding: 0%;
+    font-size: 18px;
+    font-weight: bold;
+    gap: 35px;
+}
+
+.menu_nav li {
+    padding: 5px;
+    /* border-bottom: 3px solid rgb(214, 215, 216); */
+}
+
+/* .menu_nav li:hover, .menu_nav li:first-child {
+    /* border-bottom: 3px solid rgb(206, 18, 18);
+} */
+
+
+/* times */
+.click {
+    display: none;
+    border-bottom: 3px solid rgb(214, 215, 216);
+}
+
+.times .head {
+    gap: 0px;
+}
+
+.times .head h2 {
+    color: rgb(106, 109, 110);
+}
+
+.meals {
+    width: 75vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 70px 100px;
+}
+
+.meal {
+    width: 23%;
+    text-align: center;
+}
+
+.des {
+    margin-top: 10px;
+}
+
+.des p {
+    margin: 10px;
+}
+
+.price {
+    font-size: 24px;
+    color: rgb(206, 18, 18);
+    font-weight: bold;
+}
+

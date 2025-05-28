@@ -24,24 +24,22 @@
 //     })
 // });
 
+let body = document.body
+
 
 // modals
 let dropdown1 = document.querySelector('.drop1')
-
 dropdown1.addEventListener('mouseover', () => {
     dropdown1.firstElementChild.style.display = "flex"
 })
 
 let list1 = document.getElementById('drop1')
-
 list1.addEventListener('mouseleave', () => {
     list1.style.display = "none"
 })
 
 
-
 let dropdown2 = document.querySelector('.drop2')
-
 dropdown2.addEventListener('mouseover', () => {
     dropdown2.firstElementChild.style.display = "flex"
 })
@@ -51,10 +49,10 @@ dropdown2.addEventListener('mouseleave', () => {
 })
 
 let list2 = document.getElementById('drop2')
-
 list2.addEventListener('mouseleave', () => {
     list2.style.display = "none"
 })
+
 
 // log modal
 let log = document.getElementById('log')
@@ -71,5 +69,40 @@ let enter = document.getElementById('enter')
 
 enter.addEventListener('click', () => {
     log.nextElementSibling.style.display = "none"
-
 })
+
+// body.addEventListener('click', () => {
+//     log.nextElementSibling.style.display = "none"
+// })
+
+
+
+// menu check
+let  Starters = document.querySelector('.Starters_js').parentElement
+let  Breakfast = document.querySelector('.Breakfast_js').parentElement
+let  Lunche = document.querySelector('.Lunch_js').parentElement
+let  Dinner = document.querySelector('.Dinner_js').parentElement
+
+let times = [Starters, Breakfast, Lunche, Dinner]
+
+let meals = document.querySelectorAll('.times')
+console.log(meals);
+
+
+times.forEach(t => {
+    meals.forEach(m => {
+        if (t.textContent == m.id) {
+            t.addEventListener('click', () => {
+                meals.forEach(e => {
+                    e.classList.add('click')
+                    m.classList.remove('click2')
+                })
+                m.classList.remove('click')
+                e.classList.add('click2')
+            })
+        }
+        //todo else {
+        //     alert("ERROR: Sorry, the Menu is beinng fixed.")
+        // }
+    })
+})  
