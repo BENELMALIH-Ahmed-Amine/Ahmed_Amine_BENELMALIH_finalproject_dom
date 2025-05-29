@@ -24,10 +24,23 @@ article {
     font-size: 48px;
 }
 
+#nav_b {
+    position: absolute;
+    left: 47.5%;
+    bottom: 100px;
+}
+
 #nav_b button {
     padding: 8px !important;
-    margin: 2px;;
+    margin: 2px;
+    ;
+    background-color: rgb(211, 211, 212);
 }
+
+#nav_b button:focus {
+    background-color: rgb(206, 18, 18);
+}
+
 /* End general */
 
 /** about */
@@ -154,12 +167,12 @@ article {
 .a-3 {
     background-image: url(../images/stats-bg.jpg);
     width: 100vw;
+    /*todo: position */
 }
 
-.a-3 .opa {
+.opa {
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
-    /*todo: position */
 }
 
 .nums {
@@ -199,18 +212,19 @@ article {
 
 .menu_nav li {
     padding: 5px;
-    /* border-bottom: 2.5px solid rgb(214, 215, 216); */
+    border-bottom: 2.5px solid rgb(214, 215, 216);
 }
 
-/* .menu_nav li:hover, .menu_nav li:first-child {
-    /* border-bottom: 2.5px solid rgb(206, 18, 18);
-} */
+.menu_nav li:hover,
+.menu_nav li:first-child {
+    border-bottom: 2.5px solid rgb(206, 18, 18);
+}
 
 
 /* times */
 .click {
     display: none;
-    border-bottom: 2.5px solid rgb(214, 215, 216);
+    /* border-bottom: 2.5px solid rgb(214, 215, 216); */
 }
 
 .times .head {
@@ -260,7 +274,7 @@ article {
     justify-content: space-evenly;
 }
 
-#view {
+#t_view {
     display: flex;
     justify-content: center;
     width: 50%;
@@ -322,27 +336,76 @@ article {
     border-radius: 50%;
 }
 
-.testimonial #nav_b {
-    position: absolute;
-    bottom: 100px;
-    left: 47.5%;
-}
-
 
 
 /** event */
 #event {
-    width: 100vw;
+    width: 100%;
     overflow: scroll;
+    position: relative;
 }
 
 #e_caroucel {
-    flex-direction: row;
     width: 100%;
-    /* overflow: scroll; */
+    overflow: hidden;
 }
 
-#e_caroucel .img {
-    width: 1500px;
-    /* margin: 0 .5%; */
+#e_view {
+    flex-direction: row;
+    width: 134vw;
+}
+
+.event {
+    color: rgb(255, 255, 255);
+    margin: 0 1.5px 0 1.5px;
+    width: 60%;
+}
+
+.event .info {
+    padding: 0 0 20px 30px;
+}
+
+.event h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.event .ticket {
+    font-size: 32px;
+    font-weight: 700;
+    width: fit-content;
+    border-bottom: 2px solid rgb(206, 18, 18);
+    margin-bottom: 15px;
+}
+
+.event p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 90%;
+}
+
+#event1 {
+    background-image: url(../images/events-1.jpg);
+}
+
+#event2 {
+    background-image: url(../images/events-2.jpg);
+}
+
+#event3 {
+    background-image: url(../images/events-3.jpg);
+}
+
+#event4 {
+    background-image: url(../images/events-4.jpg);
+}
+
+#event .opa {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 450px 0 1px 0;
+}
+
+#event #nav_b {
+    bottom: 0px;
 }

@@ -105,55 +105,71 @@ times.forEach(t => {
 
 
 
-// caroucel (testemonial)
-let T_Btn = Array.from(document.getElementById('nav_b').children)
-console.log(T_Btn);
 
-let T_Slides = Array.from(document.getElementById('view').children)
-console.log(T_Slides)
+
+// caoucels fonction
+const slider = (B_Array, S_Array, w1, w2, w3, w4, n) => {
+    B_Array.forEach(b => {
+        S_Array.forEach(s => {
+            b.addEventListener('click', () => {
+                if (b.getAttribute('class') == s.id) {
+                    // translate each slide by it's width
+                    let widths = [w1, w2, w3, w4]
+                    widths.forEach(w => {
+                        if (widths.indexOf(w) == S_Array.indexOf(s)) {
+                            S_Array.forEach(e => {
+                                // take other slides away
+                                e.style.transform = `translateX(${n}px)`
+                            })
+                            s.style.transform = `translateX(${w}px)`
+                            //todo s.style = "transition-timing-function: ease-in"
+                        }
+                    })
+                }
+            })
+        })
+    })
+}
+
+
+// caroucel (testemonial)
+let T_Btn = Array.from(document.querySelectorAll('#nav_b')[0].children)
+let T_Slides = Array.from(document.getElementById('t_view').children)
 
 let view = document.getElementById('t-caroucel')
 
-T_Btn.forEach(b => {
-    T_Slides.forEach(s => {
-        b.addEventListener('click', () => {
-            if (b.getAttribute('class') == s.id) {
-                // translate each slide by it's width
-                let widths = [1290, 430, -430, -1290]
-                widths.forEach(w => {
-                    if (widths.indexOf(w) == T_Slides.indexOf(s)) {
-                        T_Slides.forEach(e => {
-                            // take other slides away
-                            e.style.transform = `translateX(2500px)`
-                        })
-                        s.style.transform = `translateX(${w}px)`
-                        // s.style = "transition-timing-function: ease-in"
-                    }
-                })
-            }
-        })
+slider(T_Btn, T_Slides, 1290, 430, -430, -1290, 2500)
+
+
+// caroucel (event)
+let E_Btn = Array.from(document.querySelectorAll('#nav_b')[1].children)
+console.log(E_Btn);
+
+let E_Slides = Array.from(document.getElementById('e_view').children)
+console.log(E_Slides)
+
+E_Btn.forEach(b => {
+    b.addEventListener('click', () => {
+
     })
 })
 
-// caousel fonction
-// const slider = (B_Array, S_Array, W_Array = [], bn) => {
-//     B_Array.forEach(b => {
-//         S_Array.forEach(s => {
-//             b.addEventListener('click', () => {
-//                 if (b.getAttribute('class') == s.id) {
-//                     // translate each slide by it's width
-//                     let W_Array = []
-//                     W_Array.forEach(w => {
-//                         if (W_Array.indexOf(w) == S_Array.indexOf(s)) {
-//                             S_Array.forEach(e => {
-//                                 // take other slides away
-//                                 e.style.transform = `translateX(${bn}px)`
-//                             })
-//                             s.style.transform = `translateX(${w}px)`
-//                         }
-//                     })
-//                 }
-//             })
-//         })
-//     })
-// }
+
+
+//todo
+let Slides_Parent = document.getElementById('t_view')
+console.log(Slides_Parent);
+
+
+if (Slides_Parent.getAttribute('time')) {
+    let time = Slides_Parent.getAttribute('time')
+    console.log(time);
+
+    // T_Btn.forEach(e => {
+    //     setInterval(() => {
+    //         e.click()
+    //         console.log(4);
+            
+    //     }, 5000);
+    // })
+}
