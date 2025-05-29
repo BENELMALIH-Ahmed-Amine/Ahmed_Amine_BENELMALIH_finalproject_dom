@@ -510,3 +510,8 @@ article {
 .book-f textarea {
     padding: 10px;
 }
+
+#table {
+    border-radius: 0px !important;
+    padding: 25px;
+}
