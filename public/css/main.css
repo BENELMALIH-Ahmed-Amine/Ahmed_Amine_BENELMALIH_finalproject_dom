@@ -24,6 +24,10 @@ article {
     font-size: 48px;
 }
 
+#nav_b button {
+    padding: 8px !important;
+    margin: 2px;;
+}
 /* End general */
 
 /** about */
@@ -244,11 +248,14 @@ article {
 }
 
 /** testimonial */
+.testimonial {
+    position: relative;
+}
+
 #t-caroucel {
     background-color: rgb(242, 242, 242);
     width: 100vw;
     padding: 100px;
-    border:5px double #e69898;
     display: flex;
     justify-content: space-evenly;
 }
@@ -269,27 +276,7 @@ article {
     border-left: 3px solid rgb(206, 18, 18);
     padding-left: 20px;
     background: unset;
-    transform: translateX(1170px);
-}
-
-#view .client1 {
-    transform: translateX(1170px);
-    display: flex;
-}
-
-#view .client2 {
-    transform: translateX(395px);
-    display: flex;
-}
-
-#view .client3 {
-    transform: translateX(-380px);
-    display: flex;
-}
-
-#view .client4 {
-    transform: translateX(-1155px);
-    display: flex;
+    transform: translateX(1290px);
 }
 
 .details .info {
@@ -335,7 +322,27 @@ article {
     border-radius: 50%;
 }
 
-.testimonial #nav_b button {
-    padding: 8px !important;
-    margin: 2px;
+.testimonial #nav_b {
+    position: absolute;
+    bottom: 100px;
+    left: 47.5%;
+}
+
+
+
+/** event */
+#event {
+    width: 100vw;
+    overflow: scroll;
+}
+
+#e_caroucel {
+    flex-direction: row;
+    width: 100%;
+    /* overflow: scroll; */
+}
+
+#e_caroucel .img {
+    width: 1500px;
+    /* margin: 0 .5%; */
 }

@@ -118,13 +118,42 @@ T_Btn.forEach(b => {
     T_Slides.forEach(s => {
         b.addEventListener('click', () => {
             if (b.getAttribute('class') == s.id) {
-                T_Slides.forEach(e => {
-                    e.style.display="none"
+                // translate each slide by it's width
+                let widths = [1290, 430, -430, -1290]
+                widths.forEach(w => {
+                    if (widths.indexOf(w) == T_Slides.indexOf(s)) {
+                        T_Slides.forEach(e => {
+                            // take other slides away
+                            e.style.transform = `translateX(2500px)`
+                        })
+                        s.style.transform = `translateX(${w}px)`
+                        // s.style = "transition-timing-function: ease-in"
+                    }
                 })
-                
-                s.classList.add(s.id)
-                console.log(s);
             }
         })
     })
 })
+
+// caousel fonction
+// const slider = (B_Array, S_Array, W_Array = [], bn) => {
+//     B_Array.forEach(b => {
+//         S_Array.forEach(s => {
+//             b.addEventListener('click', () => {
+//                 if (b.getAttribute('class') == s.id) {
+//                     // translate each slide by it's width
+//                     let W_Array = []
+//                     W_Array.forEach(w => {
+//                         if (W_Array.indexOf(w) == S_Array.indexOf(s)) {
+//                             S_Array.forEach(e => {
+//                                 // take other slides away
+//                                 e.style.transform = `translateX(${bn}px)`
+//                             })
+//                             s.style.transform = `translateX(${w}px)`
+//                         }
+//                     })
+//                 }
+//             })
+//         })
+//     })
+// }
