@@ -409,3 +409,70 @@ article {
 #event #nav_b {
     bottom: 0px;
 }
+
+
+/** chefs */
+#chefs .ch-c {
+    gap: 20px;
+}
+
+#chef1 {
+    background-image: url(../images/chefs/chefs-1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#chef2 {
+    background-image: url(../images/chefs/chefs-2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#chef3 {
+    background-image: url(../images/chefs/chefs-3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ch_details {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px;
+    position: relative;
+}
+
+.ch_details:hover .socials {
+    display: flex;
+}
+
+.ch_details .socials {
+    display: none;
+    background-color: #ffffffbc;
+    font-size: 20px;
+    padding: 5px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.ch_info {
+    margin-top: 400px;
+    padding: 10px;
+    background: #fff;
+    text-align: center;
+    width: 430px;
+}
+
+.ch_info h4 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.ch_info h6 {
+    font-size: 16;
+    color: grey;
+}
+
+.ch_info p {
+    font-size: 14px;
+}
