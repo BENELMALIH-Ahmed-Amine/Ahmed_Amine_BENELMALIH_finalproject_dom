@@ -1,30 +1,12 @@
-// let btns = document.querySelectorAll('.drop')
-// let modals = document.querySelectorAll('.dropdown')
-
-// console.log(modals);
-// console.log(btns);
-
-// Array.from(btns).forEach(b => {
-//     let sight = b.getAttribute('sight')
-
-//     b.addEventListener('click', () => {
-//         if (modals[0].id == sight) {
-//             if (modals[0].style.display == "block") {
-//                 modals[0].style.display = "none"
-//             } else {
-//                 modals[0].style.display = "block"
-//             }
-//         } else if (modals[1].id == sight) {
-//             if (modals[1].style.display == "block") {
-//                 modals[1].style.display = "none"
-//             } else {
-//                 modals[1].style.display = "block"
-//             }
-//         }
-//     })
-// });
-
+// nav shadow
 let body = document.body
+
+let nav = document.querySelector('.first')
+
+document.addEventListener('scroll', () => {
+    nav.style = "box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;"
+})
+
 
 
 // modals

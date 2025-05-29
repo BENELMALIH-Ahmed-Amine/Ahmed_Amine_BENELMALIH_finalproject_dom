@@ -26,7 +26,7 @@ img {
 }
 
 .container {
-    background-color: rgb(128, 91, 31);
+    /* background-color: rgb(128, 91, 31); */
     width: 75%;
     display: flex;
     justify-content: space-between;
@@ -73,8 +73,9 @@ button {
     justify-content: center;
     align-items: center;
     padding: 25px 0;
-    position: absolute;
+    position: fixed;
     top: 0;
+    z-index: 999;
 }
 
 .icon {
@@ -144,8 +145,8 @@ nav .links {
     align-items: center;
     gap: 20px;
     position: absolute;
-    right: 230px;
     top: 90px;
+    right: 305px;
 }
 
 .log div {

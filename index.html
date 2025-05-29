@@ -80,13 +80,13 @@
                         </p>
                     </div>
                     <div>
-                        <button id="book">Book a Table</button>
+                        <button for="#book">Book a Table</button>
                         <button id="video"><i class="bi bi-play-circle orange"></i> Watch Video</button>
                     </div>
                 </div>
 
                 <div class="right">
-                    class="img" <img src="./public/images/hero-img.png" alt="">
+                    <img src="./public/images/hero-img.png" alt="">
                 </div>
             </div>
         </section>
@@ -652,7 +652,7 @@
         </article>
 
         <!-- Book a Table -->
-        <article>
+        <article id="book">
             <section class="container flex">
                 <section class="head flex">
                     <h2>Book A Table</h2>
@@ -660,7 +660,20 @@
                 </section>
 
                 <section class="container">
-
+                    <div class="img"><img src="./public/images/reservation.jpg" alt=""></div>
+                        <form action="" class="book-f flex">
+                            <div class="flex">
+                                <div><input type="text"></div>
+                                <div><input type="text"></div>
+                                <div><input type="text"></div>
+                                <div><input type="date"></div>
+                                <div><input type="text"></div>
+                                <div><input type="text"></div>
+                            </div>
+                            <div>
+                                <textarea name="" id="" placeholder="Message" cols="76" rows="7"></textarea>
+                            </div>
+                        </form>
                 </section>
             </section>
         </article>
