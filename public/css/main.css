@@ -291,7 +291,7 @@ article {
 }
 
 .details .info {
-    width: 75%;
+    width: 80%;
 }
 
 .info p {
@@ -478,17 +478,19 @@ article {
 /* book a table */
 #book .img {
     width: 35%;
+    height: 545px;
 }
 
 .book-f {
     width: 65%;
     background-color: #f8f8f8;
     gap: 20px;
-    padding: 152px;
+    padding: 95px 152px;
+    font-size: 14px;
 }
 
 .book-f div:first-child {
-    width: 157%;
+    width: 147%;
     gap: 20px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -496,7 +498,7 @@ article {
 }
 
 .book-f div:first-child div {
-    width: 30%;
+    width: 31%;
     background: unset;
 }
 
@@ -509,9 +511,28 @@ article {
 
 .book-f textarea {
     padding: 10px;
+    width: 750.9px;
+    height: 150px;
 }
 
 #table {
     border-radius: 0px !important;
     padding: 25px;
+}
+
+
+/* gallery */
+.g_view {
+    flex-direction: row;
+    overflow: scroll;
+    width: 150%;
+}
+
+.g_view .img {
+    width: 750px;
+}
+
+
+.g-c #nav_b {
+    bottom: 10px;
 }
